@@ -1,0 +1,5 @@
+category: Utils Gnome
+requires: cygwin clamav perl perl-Date-Calc perl-File-Find-Rule perl-Gtk2 perl-libwww-perl
+sdesc: "ClamAV frontend using Gtk2-Perl"
+ldesc: "ClamTk is a frontend for ClamAV using Gtk2-perl. It is intended
+to be an easy to use, lightweight program for Linux systems."
