@@ -3,7 +3,7 @@ clamtk
 Gtk2-Perl GUI virus scanner using ClamAV.
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   clamav-0.88.2-1
   perl-Date-Calc-5.4-1
   perl-File-Find-Rule-0.28-1
@@ -21,15 +21,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack clamtk-2.21-1-src.tar.bz2
+  unpack clamtk-2.22-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./clamtk-2.21-1.cygport all
+  cygport ./clamtk-2.22-1.cygport all
 
 This will create:
-  /usr/src/clamtk-2.21-1-src.tar.bz2
-  /usr/src/clamtk-2.21-1.tar.bz2
+  /usr/src/clamtk-2.22-1-src.tar.bz2
+  /usr/src/clamtk-2.22-1.tar.bz2
 
 -------------------------------------------
 
@@ -38,16 +38,17 @@ Files included in the binary package:
   /etc/postinstall/clamtk.sh
   /usr/bin/clamtk
   /usr/share/applications/clamtk.desktop
-  /usr/share/doc/Cygwin/clamtk-2.21.README
-  /usr/share/doc/clamtk-2.21/Changes
-  /usr/share/doc/clamtk-2.21/DISCLAIMER
-  /usr/share/doc/clamtk-2.21/LICENSE
-  /usr/share/doc/clamtk-2.21/README
+  /usr/share/doc/Cygwin/clamtk-2.22.README
+  /usr/share/doc/clamtk-2.22/Changes
+  /usr/share/doc/clamtk-2.22/DISCLAIMER
+  /usr/share/doc/clamtk-2.22/LICENSE
+  /usr/share/doc/clamtk-2.22/README
   /usr/share/locale/da/LC_MESSAGES/clamtk.mo
   /usr/share/locale/de/LC_MESSAGES/clamtk.mo
   /usr/share/locale/fr/LC_MESSAGES/clamtk.mo
   /usr/share/locale/it/LC_MESSAGES/clamtk.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/clamtk.mo
+  /usr/share/locale/ru/LC_MESSAGES/clamtk.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/clamtk.mo
   /usr/share/man/man1/clamtk.1.gz
   /usr/share/pixmaps/clam.xpm
@@ -55,6 +56,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.22-1 -----
+Version bump.
 
 ----- version 2.21-1 -----
 Version bump.
