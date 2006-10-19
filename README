@@ -21,15 +21,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack clamtk-2.24-1-src.tar.bz2
+  unpack clamtk-2.25-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./clamtk-2.24-1.cygport all
+  cygport ./clamtk-2.25-1.cygport all
 
 This will create:
-  /usr/src/clamtk-2.24-1-src.tar.bz2
-  /usr/src/clamtk-2.24-1.tar.bz2
+  /usr/src/clamtk-2.25-1-src.tar.bz2
+  /usr/src/clamtk-2.25-1.tar.bz2
 
 -------------------------------------------
 
@@ -38,11 +38,11 @@ Files included in the binary package:
   /etc/postinstall/clamtk.sh
   /usr/bin/clamtk
   /usr/share/applications/clamtk.desktop
-  /usr/share/doc/Cygwin/clamtk-2.24.README
-  /usr/share/doc/clamtk-2.24/Changes
-  /usr/share/doc/clamtk-2.24/DISCLAIMER
-  /usr/share/doc/clamtk-2.24/LICENSE
-  /usr/share/doc/clamtk-2.24/README
+  /usr/share/doc/Cygwin/clamtk-2.25.README
+  /usr/share/doc/clamtk-2.25/Changes
+  /usr/share/doc/clamtk-2.25/DISCLAIMER
+  /usr/share/doc/clamtk-2.25/LICENSE
+  /usr/share/doc/clamtk-2.25/README
   /usr/share/locale/da/LC_MESSAGES/clamtk.mo
   /usr/share/locale/de/LC_MESSAGES/clamtk.mo
   /usr/share/locale/es/LC_MESSAGES/clamtk.mo
@@ -58,6 +58,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.25-1 -----
+Version bump.
 
 ----- version 2.24-1 -----
 Version bump.
