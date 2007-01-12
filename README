@@ -3,33 +3,33 @@ clamtk
 Gtk2-Perl GUI virus scanner using ClamAV.
 
 Runtime requirements:
-  cygwin-1.5.21-2
-  clamav-0.88.4-1
-  perl-Date-Calc-5.4-1
-  perl-File-Find-Rule-0.28-1
-  perl-Glib-1.120-1
-  perl-Gtk2-1.122-1
-  perl-Locale-gettext-1.05-1
-  perl-libwww-perl-5.805-1
+  clamav
+  perl
+  perl-Date-Calc
+  perl-File-Find-Rule
+  perl-Glib
+  perl-Gtk2
+  perl-Locale-gettext
+  perl-libwww-perl
 
 Canonical homepage:
   http://clamtk.sourceforge.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/clamtk/
+  http://downloads.sourceforge.net/clamtk/
 
 -------------------------------------------
 
 Build instructions:
-  unpack clamtk-2.26-1-src.tar.bz2
+  unpack clamtk-2.27-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./clamtk-2.26-1.cygport all
+  cygport ./clamtk-2.27-1.cygport all
 
 This will create:
-  /usr/src/clamtk-2.26-1-src.tar.bz2
-  /usr/src/clamtk-2.26-1.tar.bz2
+  /usr/src/clamtk-2.27-1-src.tar.bz2
+  /usr/src/clamtk-2.27-1.tar.bz2
 
 -------------------------------------------
 
@@ -38,11 +38,11 @@ Files included in the binary package:
   /etc/postinstall/clamtk.sh
   /usr/bin/clamtk
   /usr/share/applications/clamtk.desktop
-  /usr/share/doc/Cygwin/clamtk-2.26.README
-  /usr/share/doc/clamtk-2.26/Changes
-  /usr/share/doc/clamtk-2.26/DISCLAIMER
-  /usr/share/doc/clamtk-2.26/LICENSE
-  /usr/share/doc/clamtk-2.26/README
+  /usr/share/doc/Cygwin/clamtk-2.27.README
+  /usr/share/doc/clamtk-2.27/Changes
+  /usr/share/doc/clamtk-2.27/DISCLAIMER
+  /usr/share/doc/clamtk-2.27/LICENSE
+  /usr/share/doc/clamtk-2.27/README
   /usr/share/locale/da/LC_MESSAGES/clamtk.mo
   /usr/share/locale/de/LC_MESSAGES/clamtk.mo
   /usr/share/locale/es/LC_MESSAGES/clamtk.mo
@@ -53,11 +53,14 @@ Files included in the binary package:
   /usr/share/locale/ru/LC_MESSAGES/clamtk.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/clamtk.mo
   /usr/share/man/man1/clamtk.1.gz
-  /usr/share/pixmaps/clam.xpm
+  /usr/share/pixmaps/clamtk.png
 
 ------------------
 
 Port Notes:
+
+----- version 2.27-1 -----
+Version bump.
 
 ----- version 2.26-1 -----
 Version bump.
