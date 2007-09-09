@@ -21,15 +21,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack clamtk-3.01-1-src.tar.bz2
+  unpack clamtk-3.02-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./clamtk-3.01-1.cygport all
+  cygport ./clamtk-3.02-1.cygport all
 
 This will create:
-  /usr/src/clamtk-3.01-1-src.tar.bz2
-  /usr/src/clamtk-3.01-1.tar.bz2
+  /usr/src/clamtk-3.02-1-src.tar.bz2
+  /usr/src/clamtk-3.02-1.tar.bz2
 
 -------------------------------------------
 
@@ -39,16 +39,17 @@ Files included in the binary package:
   /usr/bin/clamtk
   /usr/share/applications/clamtk.desktop
   /usr/share/apps/konqueror/servicemenus/clamtk-kde.desktop
-  /usr/share/doc/Cygwin/clamtk-3.01.README
-  /usr/share/doc/clamtk-3.01/Changes
-  /usr/share/doc/clamtk-3.01/DISCLAIMER
-  /usr/share/doc/clamtk-3.01/LICENSE
-  /usr/share/doc/clamtk-3.01/README
+  /usr/share/doc/Cygwin/clamtk-3.02.README
+  /usr/share/doc/clamtk-3.02/Changes
+  /usr/share/doc/clamtk-3.02/DISCLAIMER
+  /usr/share/doc/clamtk-3.02/LICENSE
+  /usr/share/doc/clamtk-3.02/README
   /usr/share/locale/cs_CZ/LC_MESSAGES/clamtk.mo
   /usr/share/locale/da/LC_MESSAGES/clamtk.mo
   /usr/share/locale/de/LC_MESSAGES/clamtk.mo
   /usr/share/locale/es/LC_MESSAGES/clamtk.mo
   /usr/share/locale/fr/LC_MESSAGES/clamtk.mo
+  /usr/share/locale/gl/LC_MESSAGES/clamtk.mo
   /usr/share/locale/it/LC_MESSAGES/clamtk.mo
   /usr/share/locale/pl/LC_MESSAGES/clamtk.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/clamtk.mo
@@ -62,6 +63,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 3.02-1 -----
+Version bump.
 
 ----- version 3.01-1 -----
 Version bump.
