@@ -1,0 +1,35 @@
+kde_v=0.10
+
+DESCRIPTION="Gtk2-Perl ClamAV frontend"
+HOMEPAGE="http://clamtk.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz
+         mirror://sourceforge/${PN}/${PN}-kde-${kde_v}.tar.gz"
+
+DOCS="DISCLAIMER"
+
+src_compile() { :; }
+
+src_test() { :; }
+
+src_install() {
+	cd ${S}
+	dobin clamtk
+	domenu clamtk.desktop
+	doicon clamtk.png
+	doman clamtk.1.gz
+
+	cd ${S}/po
+	# FIXME: dolocale?
+	for mo in *.mo
+	do
+		local mylang=${mo%.mo}
+
+		insinto /usr/share/locale/${mylang}/LC_MESSAGES
+		newins ${mo} ${PN}.mo
+	done
+
+	cd ${S}/../${PN}-kde-${kde_v}
+	insinto /usr/share/apps/konqueror/servicemenus
+	doins clamtk-kde.desktop
+	doicon clamtk-kde.xpm
+}
