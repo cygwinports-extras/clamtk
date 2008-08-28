@@ -1,9 +1,10 @@
-kde_v=0.10
+kde_v=0.11
 
 DESCRIPTION="Gtk2-Perl ClamAV frontend"
 HOMEPAGE="http://clamtk.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz
          mirror://sourceforge/${PN}/${PN}-kde-${kde_v}.tar.gz"
+PATCH_URI="3.11-root.patch"
 
 DOCS="DISCLAIMER"
 
