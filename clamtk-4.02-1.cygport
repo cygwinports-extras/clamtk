@@ -1,12 +1,9 @@
-kde_v=0.11
+inherit perl
 
 DESCRIPTION="Gtk2-Perl ClamAV frontend"
 HOMEPAGE="http://clamtk.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz
-         mirror://sourceforge/${PN}/${PN}-kde-${kde_v}.tar.gz"
-PATCH_URI="3.11-root.patch"
-
-DOCS="DISCLAIMER"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+PATCH_URI="4.02-no-root-user.patch"
 
 src_compile() { :; }
 
@@ -17,7 +14,14 @@ src_install() {
 	dobin clamtk
 	domenu clamtk.desktop
 	doicon clamtk.png
+	newicon clamtk.xpm clamtk-kde.xpm
 	doman clamtk.1.gz
+
+	insinto ${PERL_VENDORLIB}/ClamTk
+	doins lib/*
+
+	insinto /usr/share/apps/konqueror/servicemenus
+	doins clamtk-kde.desktop
 
 	cd ${S}/po
 	# FIXME: dolocale?
@@ -28,9 +32,5 @@ src_install() {
 		insinto /usr/share/locale/${mylang}/LC_MESSAGES
 		newins ${mo} ${PN}.mo
 	done
-
-	cd ${S}/../${PN}-kde-${kde_v}
-	insinto /usr/share/apps/konqueror/servicemenus
-	doins clamtk-kde.desktop
-	doicon clamtk-kde.xpm
 }
+DOCS="DISCLAIMER"
