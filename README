@@ -3,6 +3,7 @@ clamtk
 Gtk2-Perl GUI virus scanner using ClamAV.
 
 Runtime requirements:
+  bind
   clamav
   perl
   perl-Date-Calc
@@ -21,15 +22,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack clamtk-4.03-1-src.tar.bz2
+  unpack clamtk-4.07-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./clamtk-4.03-1.cygport all
+  cygport ./clamtk-4.07-1.cygport all
 
 This will create:
-  /usr/src/clamtk-4.03-1-src.tar.bz2
-  /usr/src/clamtk-4.03-1.tar.bz2
+  /usr/src/clamtk-4.07-1-src.tar.bz2
+  /usr/src/clamtk-4.07-1.tar.bz2
 
 -------------------------------------------
 
@@ -44,10 +45,10 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/ClamTk/Update.pm
   /usr/share/applications/clamtk.desktop
   /usr/share/apps/konqueror/servicemenus/clamtk-kde.desktop
-  /usr/share/doc/clamtk-4.03/Changes
-  /usr/share/doc/clamtk-4.03/DISCLAIMER
-  /usr/share/doc/clamtk-4.03/LICENSE
-  /usr/share/doc/clamtk-4.03/README
+  /usr/share/doc/clamtk-4.07/Changes
+  /usr/share/doc/clamtk-4.07/DISCLAIMER
+  /usr/share/doc/clamtk-4.07/LICENSE
+  /usr/share/doc/clamtk-4.07/README
   /usr/share/locale/cs_CZ/LC_MESSAGES/clamtk.mo
   /usr/share/locale/da/LC_MESSAGES/clamtk.mo
   /usr/share/locale/de/LC_MESSAGES/clamtk.mo
@@ -71,6 +72,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 4.07-1 -----
+Version bump.
 
 ----- version 4.03-1 -----
 Version bump.
