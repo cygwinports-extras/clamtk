@@ -22,152 +22,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack clamtk-4.10-1-src.tar.bz2
+  unpack clamtk-4.18-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./clamtk-4.10-1.cygport all
+  cygport ./clamtk-4.18-1.cygport all
 
 This will create:
-  /usr/src/clamtk-4.10-1-src.tar.bz2
-  /usr/src/clamtk-4.10-1.tar.bz2
+  /usr/src/clamtk-4.18-1-src.tar.bz2
+  /usr/src/clamtk-4.18-1.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/postinstall/clamtk.sh
-  /usr/bin/clamtk
-  /usr/lib/perl5/vendor_perl/5.10/ClamTk/App.pm
-  /usr/lib/perl5/vendor_perl/5.10/ClamTk/GUI.pm
-  /usr/lib/perl5/vendor_perl/5.10/ClamTk/Prefs.pm
-  /usr/lib/perl5/vendor_perl/5.10/ClamTk/Results.pm
-  /usr/lib/perl5/vendor_perl/5.10/ClamTk/Update.pm
-  /usr/share/applications/clamtk.desktop
-  /usr/share/apps/konqueror/servicemenus/clamtk-kde.desktop
-  /usr/share/doc/clamtk-4.10/Changes
-  /usr/share/doc/clamtk-4.10/DISCLAIMER
-  /usr/share/doc/clamtk-4.10/LICENSE
-  /usr/share/doc/clamtk-4.10/README
-  /usr/share/locale/cs_CZ/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/da/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/de/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/es/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/fr/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/gl/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/it/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/ja/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/ko/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/nl/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/pl/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/ro/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/ru/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/sl/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/sv/LC_MESSAGES/clamtk.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/clamtk.mo
-  /usr/share/man/man1/clamtk.1.gz
-  /usr/share/pixmaps/clamtk.png
-
-------------------
-
 Port Notes:
 
------ version 4.10-1 -----
-Version bump.
-
------ version 4.08-1 -----
-Version bump.
-
------ version 4.07-1 -----
-Version bump.
-
------ version 4.03-1 -----
-Version bump.
-
------ version 4.02-1 -----
-Version bump.
-
------ version 3.11-1 -----
-Version bump.
-
------ version 3.10-1 -----
-Version bump.
-
------ version 3.09-1 -----
-Version bump.
-
------ version 3.08-1 -----
-Version bump.
-
------ version 3.07-1 -----
-Version bump.
-
------ version 3.06-1 -----
-Version bump.
-
------ version 3.05-1 -----
-Version bump.
-
------ version 3.03-1 -----
-Version bump.
-
------ version 3.02-1 -----
-Version bump.
-
------ version 3.01-1 -----
-Version bump.
-
------ version 3.00-1 -----
-Version bump. Includes Konqueror servicemenu from clamtk-kde.
-
------ version 2.32-1 -----
-Version bump.
-
------ version 2.30-1 -----
-Version bump.
-
------ version 2.28-1 -----
-Version bump.
-
------ version 2.27-1 -----
-Version bump.
-
------ version 2.26-1 -----
-Version bump.
-
------ version 2.25-1 -----
-Version bump.
-
------ version 2.24-1 -----
-Version bump.
-
------ version 2.23-1 -----
-Version bump.
-
------ version 2.22-1 -----
-Version bump.
-
------ version 2.21-1 -----
-Version bump.
-
------ version 2.20-1 -----
-Version bump.
-
------ version 2.19-1 -----
-Version bump.
-
------ version 2.18-1 -----
-Version bump.
-
------ version 2.07-1 -----
-Version bump.
-
------ version 2.04-1 -----
-New upstream version based on Gtk2-Perl.
-
------ version 1.0.9-1 -----
-Initial release for Cygwin.
+----- version 4.18-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

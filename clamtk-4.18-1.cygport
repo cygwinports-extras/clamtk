@@ -10,24 +10,22 @@ src_compile() { :; }
 src_test() { :; }
 
 src_install() {
+	local mylang
+
 	cd ${S}
 	dobin clamtk
 	domenu clamtk.desktop
 	doicon clamtk.png
-	newicon clamtk.xpm clamtk-kde.xpm
 	doman clamtk.1.gz
 
 	insinto ${PERL_VENDORLIB}/ClamTk
 	doins lib/*
 
-	insinto /usr/share/apps/konqueror/servicemenus
-	doins clamtk-kde.desktop
-
 	cd ${S}/po
 	# FIXME: dolocale?
 	for mo in *.mo
 	do
-		local mylang=${mo%.mo}
+		mylang=${mo%.mo}
 
 		insinto /usr/share/locale/${mylang}/LC_MESSAGES
 		newins ${mo} ${PN}.mo
