@@ -1,0 +1,20 @@
+--- origsrc/clamtk-4.23/lib/Update.pm	2010-01-08 08:20:58.000000000 -0600
++++ src/clamtk-4.23/lib/Update.pm	2010-01-24 18:04:13.357186000 -0600
+@@ -64,7 +64,7 @@ sub update_dialog {
+ 
+     my $sig_box = Gtk2::CheckButton->new();
+     $sig_box->set_active(FALSE);
+-    if ( $> != 0 ) {
++    if ( $> != 0 && $^O != 'cygwin' ) {
+         $sig_box->set_sensitive(FALSE);
+         $tt->set_tip( $sig_box, gettext('You must be root to enable this.') );
+     }
+@@ -78,7 +78,7 @@ sub update_dialog {
+ 
+     my $paths = ClamTk::App->get_path('all');
+ 
+-    if ( $> == 0 || $user_can ) {
++    if ( $> == 0 || $^O == 'cygwin' || $user_can ) {
+         if ( $paths->{freshclam} ) {
+             push @{ $update_list->{data} },
+                 [
