@@ -3,15 +3,16 @@ clamtk
 Gtk2-Perl GUI virus scanner using ClamAV.
 
 Runtime requirements:
-  bind
   clamav
-  perl
+  cron
+  perl-5.10.1-4
   perl-Date-Calc
   perl-File-Find-Rule
   perl-Glib
   perl-Gtk2
   perl-Locale-gettext
   perl-libwww-perl
+  zenity
 
 Canonical homepage:
   http://clamtk.sourceforge.net/
@@ -22,19 +23,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack clamtk-4.23-1-src.tar.bz2
+  unpack clamtk-4.28-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./clamtk-4.23-1.cygport all
+  cygport ./clamtk-4.28-1.cygport all
 
 This will create:
-  /usr/src/clamtk-4.23-1-src.tar.bz2
-  /usr/src/clamtk-4.23-1.tar.bz2
+  /usr/src/clamtk-4.28-1-src.tar.bz2
+  /usr/src/clamtk-4.28-1.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 4.28-1 -----
+Version bump.
 
 ----- version 4.23-1 -----
 Version bump.
