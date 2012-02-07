@@ -19,7 +19,7 @@ src_install() {
 	doman clamtk.1.gz
 
 	insinto ${PERL_VENDORLIB}/ClamTk
-	doins lib/*
+	doins lib/*.pm
 
 	cd ${S}/po
 	# FIXME: dolocale?
