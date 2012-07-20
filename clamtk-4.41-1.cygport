@@ -1,9 +1,14 @@
 inherit perl
 
-DESCRIPTION="Gtk2-Perl ClamAV frontend"
+CATEGORY="Utils"
+SUMMARY="ClamAV frontend using Gtk2-Perl"
+DESCRIPTION="ClamTk is a frontend for ClamAV using Gtk2-perl. It is intended
+to be an easy to use, lightweight program for Linux systems."
 HOMEPAGE="http://clamtk.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 PATCH_URI="4.28-no-root-user.patch"
+
+REQUIRES="clamav cron zenity"
 
 src_compile() { :; }
 
@@ -15,7 +20,7 @@ src_install() {
 	cd ${S}
 	dobin clamtk
 	domenu clamtk.desktop
-	doicon clamtk.png
+	doicon images/*
 	doman clamtk.1.gz
 
 	insinto ${PERL_VENDORLIB}/ClamTk
