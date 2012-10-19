@@ -1,5 +1,8 @@
 inherit perl
 
+NAME="clamtk"
+VERSION=4.42
+RELEASE=1
 CATEGORY="Utils"
 SUMMARY="ClamAV frontend using Gtk2-Perl"
 DESCRIPTION="ClamTk is a frontend for ClamAV using Gtk2-perl. It is intended
@@ -25,6 +28,9 @@ src_install() {
 
 	insinto ${PERL_VENDORLIB}/ClamTk
 	doins lib/*.pm
+
+	insinto /usr/share/Thunar/sendto
+	doins clamtk.desktop
 
 	cd ${S}/po
 	# FIXME: dolocale?
