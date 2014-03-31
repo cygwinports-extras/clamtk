@@ -1,17 +1,18 @@
 inherit perl
 
 NAME="clamtk"
-VERSION=4.45
+VERSION=5.05
 RELEASE=1
 CATEGORY="Utils"
 SUMMARY="ClamAV frontend using Gtk2-Perl"
 DESCRIPTION="ClamTk is a frontend for ClamAV using Gtk2-perl. It is intended
 to be an easy to use, lightweight program for Linux systems."
-HOMEPAGE="http://clamtk.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
-PATCH_URI="4.28-no-root-user.patch"
+HOMEPAGE="https://code.google.com/p/clamtk/"
+SRC_URI="https://bitbucket.org/dave_theunsub/clamtk/downloads/clamtk-${VERSION}.tar.gz"
 
-REQUIRES="clamav cron zenity"
+ARCH=noarch
+
+REQUIRES="clamav cron"
 
 src_compile() { :; }
 
@@ -32,6 +33,9 @@ src_install() {
 	insinto /usr/share/Thunar/sendto
 	doins clamtk.desktop
 
+	insinto /usr/share/kde4/services
+	doins clamtk.desktop
+
 	cd ${S}/po
 	# FIXME: dolocale?
 	for mo in *.mo
@@ -39,7 +43,7 @@ src_install() {
 		mylang=${mo%.mo}
 
 		insinto /usr/share/locale/${mylang}/LC_MESSAGES
-		newins ${mo} ${PN}.mo
+		newins ${mo} ${NAME}.mo
 	done
 }
 DOCS="DISCLAIMER"
