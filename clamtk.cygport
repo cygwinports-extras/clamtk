@@ -1,7 +1,7 @@
 inherit perl
 
 NAME="clamtk"
-VERSION=5.05
+VERSION=5.07
 RELEASE=1
 CATEGORY="Utils"
 SUMMARY="ClamAV frontend using Gtk2-Perl"
